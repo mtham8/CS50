@@ -10,10 +10,12 @@ while (true) {
 #include <cs50.h>
 #include <stdio.h>
 
+// your first function has to be called main
 int main(void)
 {
   string s = GetString();
   // '%s' ==> put the string here
+  // printf is a function whose purpose in life is to print a formatted string
   printf("hello, %s\n", s);
 }
 
@@ -56,5 +58,88 @@ int main(void)
 int main(void)
 {
   // %f grabs a float integer
-  printf("%f\n", 1.0/10.0);
+  printf("%.10f\n", 1.0/10.0);
 }
+
+
+int main(void)
+{
+  printf("state your name\n");
+  string s = GetString();
+  PrintName(s);
+}
+
+// abstraction, function decompositoin ==> breaking up functions into modules
+void PrintName(string name)
+{
+  printf("hello, %s\n", name)
+}
+
+// Types
+// bool (cs50), char, double (twice as big as a float), float (32 bit value), int, long long (64 bits), string (cs50)
+
+// Format Codes
+/* %c
+* %i ==> print out an integer
+* %f ==> floating point value or a double
+* %lld ==> long long decimal value */
+
+// escape sequences
+// \n, \r, \t, \', \'', \\, \0
+
+// switches
+switch(expression)
+{
+  case i:
+    // do this
+    break;
+  case j:
+    // do that
+    break;
+  default:
+    // do this other thing
+    break;
+}
+
+int main(void)
+{
+  int n = GetPositiveInt();
+  printf("Thanks for the %i\n", n);
+}
+
+int GetPositiveInt(void)
+{
+  int n;
+  do
+  {
+    printf("Give me a positive int: ");
+    n = GetInt();
+  }
+  while(n < 1);
+  return n;
+}
+
+int cube(int n)
+{
+  return n*n*n;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
