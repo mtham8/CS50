@@ -2,7 +2,7 @@
 
 Notes and problem sets for Harvard's CS50 course
 
-Notes for C Programming: Absolute Beginner's Guide 3rd Edition
+Notes for Programming in C 4th Edition by Stephen G. Kochan
 
 Topics to be Covered:
 
