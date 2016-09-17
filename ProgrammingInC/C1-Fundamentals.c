@@ -120,3 +120,20 @@ You can rename a file using 'mv source destination', where 'source' is the file'
 is the file's new name.
 */
 
+/*
+File structure:
+
+header(*.h) ==> declares libraries resources, functions, variables, structs
+==> the interface
+==> do not include function definitions, encapsulation - hiding information
+
+implementation(*.c) ==> where the actual function is written
+
+implementation + header ==> compiles to ==> object(*.o) ==> linked ==> binary
+
+To use a C libarary:
+1. include the header files
+2. link in the libraries
+  clang hello.c ... -l[lib]
+  clang ... -lm
+*/
