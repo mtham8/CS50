@@ -108,4 +108,15 @@ int main()
       printf('%d\n', a);
 }
 
+/*
+C is a 'higher-level language,' and yet it provides capabilities that enable the user to 'get in close'
+with the hardware and deal with the computer on a much lower level.
+
+An operating system is a program that controls the entire operation of a computer. All input and output
+operations that are performed on a computer system are channeled through the operating system. The operating
+system also manages the computer system's resources and must handle the execution of programs.
+
+You can rename a file using 'mv source destination', where 'source' is the file's current name and 'destination'
+is the file's new name.
+*/
 
